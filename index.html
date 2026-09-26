@@ -19,7 +19,7 @@
 <header>
     <nav class="navbar">
 
-        <div class="logo">NOREV<span>.</span></div>
+        <a href="#home" class="logo-link" aria-label="NOREV home"><img src="logo.png" alt="NOREV" class="logo-img"><span class="logo-name">NOREV</span></a>
 
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
@@ -35,6 +35,7 @@
             <button type="button" id="cartBtn" aria-label="Open cart">
                 🛒 <span id="cartCount">0</span>
             </button>
+            <button type="button" id="authBtn" aria-label="Sign up or log in">👤</button>
         </div>
 
         <button type="button" class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
@@ -110,190 +111,29 @@
             Underwear
         </button>
 
+        <button class="filter" data-category="hoodie">
+            Hoodies
+        </button>
+
+        <button class="filter" data-category="jacket">
+            Jackets
+        </button>
+
+    </div>
+
+    <div class="sort-row">
+        <label for="sortSelect">Sort by:</label>
+        <select id="sortSelect">
+            <option value="default">Featured</option>
+            <option value="store-asc">Our price: low to high</option>
+            <option value="best-asc">Best deal (lowest anywhere): low to high</option>
+        </select>
+        <p class="compare-note">Compare boxes show sample prices on Amazon / Flipkart / Myntra — update them in <code>products.js</code> (the product database). “View” links open that site’s search results for the product.</p>
     </div>
 
 
     <div class="product-grid" id="productGrid">
-
-        <!-- PRODUCT 1 -->
-        <div class="product-card" data-category="tshirt">
-
-            <div class="product-image">
-
-                <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=80" alt="Essential White Tee">
-
-                <span class="tag">NEW</span>
-
-                <button type="button" class="wishlist" aria-label="Add to wishlist">♡</button>
-
-            </div>
-
-            <div class="product-info">
-
-                <p>T-SHIRT</p>
-
-                <h3>Essential White Tee</h3>
-
-                <div class="price">
-                    ₹599
-                </div>
-
-                <div class="buy-actions">
-                    <button class="add-cart" data-name="Essential White Tee" data-price="599">
-                        ADD TO CART
-                    </button>
-                    <button class="buy-now" data-name="Essential White Tee" data-price="599">
-                        BUY NOW
-                    </button>
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <!-- PRODUCT 2 -->
-        <div class="product-card" data-category="cargo">
-
-            <div class="product-image">
-
-                <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=900&q=80" alt="Urban Cargo Set">
-
-                <span class="tag">POPULAR</span>
-
-                <button type="button" class="wishlist" aria-label="Add to wishlist">♡</button>
-
-            </div>
-
-            <div class="product-info">
-
-                <p>JEANS & CARGOS</p>
-
-                <h3>Urban Cargo Set</h3>
-
-                <div class="price">
-                    ₹2,999
-                </div>
-
-                <div class="buy-actions">
-                    <button class="add-cart" data-name="Urban Cargo Set" data-price="2999">
-                        ADD TO CART
-                    </button>
-                    <button class="buy-now" data-name="Urban Cargo Set" data-price="2999">
-                        BUY NOW
-                    </button>
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <!-- PRODUCT 3 -->
-        <div class="product-card" data-category="cargo">
-
-            <div class="product-image">
-
-                <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=900&q=80" alt="Classic Dark Cargo">
-
-                <button type="button" class="wishlist" aria-label="Add to wishlist">♡</button>
-
-            </div>
-
-            <div class="product-info">
-
-                <p>JEANS & CARGOS</p>
-
-                <h3>Classic Dark Cargo</h3>
-
-                <div class="price">
-                    ₹1,999
-                </div>
-
-                <div class="buy-actions">
-                    <button class="add-cart" data-name="Classic Dark Cargo" data-price="1999">
-                        ADD TO CART
-                    </button>
-                    <button class="buy-now" data-name="Classic Dark Cargo" data-price="1999">
-                        BUY NOW
-                    </button>
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <!-- PRODUCT 4 -->
-        <div class="product-card" data-category="shirt">
-
-            <div class="product-image">
-
-                <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=900&q=80" alt="Classic Formal Shirt">
-
-                <span class="tag">SALE</span>
-
-                <button type="button" class="wishlist" aria-label="Add to wishlist">♡</button>
-
-            </div>
-
-            <div class="product-info">
-
-                <p>SHIRTS</p>
-
-                <h3>Classic Formal Shirt</h3>
-
-                <div class="price">
-                    ₹1,999
-                </div>
-
-                <div class="buy-actions">
-                    <button class="add-cart" data-name="Classic Formal Shirt" data-price="1999">
-                        ADD TO CART
-                    </button>
-                    <button class="buy-now" data-name="Classic Formal Shirt" data-price="1999">
-                        BUY NOW
-                    </button>
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- PRODUCT 5 -->
-        <div class="product-card" data-category="underwear">
-
-            <div class="product-image">
-
-                <img src="https://images.unsplash.com/photo-1604176354204-9268737828e4?auto=format&fit=crop&w=900&q=80" alt="Comfort Cotton Pack">
-
-                <button type="button" class="wishlist" aria-label="Add to wishlist">♡</button>
-
-            </div>
-
-            <div class="product-info">
-
-                <p>UNDERWEAR</p>
-
-                <h3>Comfort Cotton Pack</h3>
-
-                <div class="price">
-                    ₹899
-                </div>
-
-                <div class="buy-actions">
-                    <button class="add-cart" data-name="Comfort Cotton Pack" data-price="899">
-                        ADD TO CART
-                    </button>
-                    <button class="buy-now" data-name="Comfort Cotton Pack" data-price="899">
-                        BUY NOW
-                    </button>
-                </div>
-
-            </div>
-
-        </div>
-
+        <!-- Product cards render from products.js -->
     </div>
 
 </section>
@@ -343,14 +183,22 @@
         </h2>
 
         <p>
-            NOREV was created with one simple idea:
-            clothing should feel as good as it looks.
-            We create timeless pieces with modern
-            silhouettes and everyday comfort.
+            NOREV is an Indian clothing brand launched in 2026
+            with one simple idea: clothing should feel as good
+            as it looks. From everyday tees and shirts to jeans,
+            cargos, hoodies, jackets and cotton essentials, every
+            piece is designed for comfort, honest pricing and
+            all-day wear.
         </p>
 
-        <a href="#" class="text-link">
-            LEARN MORE →
+        <p>
+            No flash, no markup games — just well-made modern
+            staples, quality-checked before dispatch and backed
+            by easy support at norevclothing@gmail.com.
+        </p>
+
+        <a href="#shop" class="text-link">
+            SHOP THE COLLECTION →
         </a>
 
     </div>
@@ -407,7 +255,7 @@
     </div>
 
 
-    <form class="contact-form" id="contactForm" action="mailto:enquiry@norev.in" method="post" enctype="text/plain">
+    <form class="contact-form" id="contactForm">
 
         <input
             type="text"
@@ -437,6 +285,8 @@
             required
         ></textarea>
 
+        <p class="form-status" id="contactStatus" role="status"></p>
+
         <button type="submit" class="btn">
             SEND MESSAGE
         </button>
@@ -453,9 +303,7 @@
 
         <div>
 
-            <div class="logo">
-                NOREV<span>.</span>
-            </div>
+            <div class="logo-lockup"><img src="logo.png" alt="NOREV" class="logo-img"><span class="logo-name">NOREV</span></div>
 
             <p>
                 Modern clothing for modern lives.
@@ -494,9 +342,9 @@
 
             <a href="https://instagram.com/norevv.co.in" target="_blank" rel="noopener noreferrer">Instagram</a>
             <a href="https://facebook.com/Norevv" target="_blank" rel="noopener noreferrer">Facebook</a>
-            <a href="mailto:contact@norev.in">contact@norev.in</a>
-            <a href="mailto:support@norev.in">support@norev.in</a>
-            <a href="mailto:orders@norev.in">orders@norev.in</a>
+            <a href="mailto:norevclothing@gmail.com">norevclothing@gmail.com</a>
+            <a href="mailto:norevclothing@gmail.com">norevclothing@gmail.com</a>
+            <a href="mailto:norevclothing@gmail.com">norevclothing@gmail.com</a>
 
         </div>
 
@@ -510,6 +358,72 @@
     </div>
 
 </footer>
+
+
+<!-- AUTH (SIGN UP / LOG IN) -->
+<div class="modal-overlay" id="authOverlay"></div>
+
+<div class="checkout-modal" id="authModal" aria-modal="true" role="dialog" aria-labelledby="authTitle">
+    <div class="checkout-header">
+        <div>
+            <p class="checkout-tag">Members</p>
+            <h2 id="authTitle">Sign up</h2>
+        </div>
+        <button type="button" id="closeAuth" aria-label="Close account">×</button>
+    </div>
+
+    <div id="authForms">
+        <div class="auth-tabs">
+            <button type="button" id="tabSignup" class="active">Sign up</button>
+            <button type="button" id="tabLogin">Log in</button>
+        </div>
+
+        <form id="signupForm" class="checkout-form">
+            <div class="field-row">
+                <label>
+                    <span>Full name</span>
+                    <input type="text" name="name" placeholder="Your full name" required>
+                </label>
+            </div>
+            <div class="field-row">
+                <label>
+                    <span>Email ID</span>
+                    <input type="email" name="email" placeholder="you@example.com" required>
+                </label>
+            </div>
+            <div class="field-row">
+                <label>
+                    <span>Password (min 4 characters)</span>
+                    <input type="password" name="password" placeholder="Choose a password" minlength="4" required>
+                </label>
+            </div>
+            <button type="submit" class="checkout-submit">Create account</button>
+        </form>
+
+        <form id="loginForm" class="checkout-form" hidden>
+            <div class="field-row">
+                <label>
+                    <span>Email ID</span>
+                    <input type="email" name="email" placeholder="you@example.com" required>
+                </label>
+            </div>
+            <div class="field-row">
+                <label>
+                    <span>Password</span>
+                    <input type="password" name="password" placeholder="Your password" required>
+                </label>
+            </div>
+            <button type="submit" class="checkout-submit">Log in</button>
+        </form>
+    </div>
+
+    <div id="authAccount" hidden>
+        <div class="checkout-summary" id="authSummary">Signed in</div>
+        <button type="button" class="checkout-submit" id="logoutBtn">Log out</button>
+    </div>
+
+    <p class="form-status" id="authStatus" role="status"></p>
+</div>
 
 
 <!-- CART SIDEBAR -->
@@ -614,6 +528,7 @@
 </div>
 
 
+<script src="products.js"></script>
 <script src="script.js"></script>
 
 </body>
