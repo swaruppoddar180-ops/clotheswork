@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NOREV — Modern Clothing</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header>
+    <nav class="navbar">
+
+        <div class="logo">NOREV<span>.</span></div>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#collections">Collections</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-icons">
+            <button type="button" id="searchBtn" aria-label="Open search">⌕</button>
+            <button type="button" id="themeBtn" aria-label="Toggle theme">☾</button>
+            <button type="button" id="cartBtn" aria-label="Open cart">
+                🛒 <span id="cartCount">0</span>
+            </button>
+        </div>
+
+        <button type="button" class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+
+    </nav>
+</header>
+
+
+<!-- SEARCH -->
+<div class="search-box" id="searchBox">
+    <input type="text" id="searchInput" placeholder="Search products...">
+</div>
+
+
+<!-- HERO -->
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <p class="small-title">NEW COLLECTION 2026</p>
+
+        <h1>
+            WEAR YOUR
+            <span>IDENTITY.</span>
+        </h1>
+
+        <p>
+            Modern essentials designed for people
+            who create their own style.
+        </p>
+
+        <div class="hero-actions">
+            <a href="#shop" class="btn">SHOP NOW</a>
+            <a href="#contact" class="btn secondary">CONTACT US</a>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- SHOP -->
+<section class="shop" id="shop">
+
+    <div class="section-heading">
+
+        <p>SHOP</p>
+
+        <h2>BEST SELLERS</h2>
+
+    </div>
+
+
+    <div class="filter-buttons">
+
+        <button class="filter active" data-category="all">
+            All
+        </button>
+
+        <button class="filter" data-category="tshirt">
+            T-Shirts
+        </button>
+
+        <button class="filter" data-category="shirt">
+            Shirts
+        </button>
+
+        <button class="filter" data-category="cargo">
+            Jeans & Cargoes
+        </button>
+
+        <button class="filter" data-category="underwear">
+            Underwear
+        </button>
+
+    </div>
+
+
+    <div class="product-grid" id="productGrid">
+
+        <!-- PRODUCT 1 -->
+        <div class="product-card" data-category="tshirt">
+
+            <div class="product-image">
+
+                <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=80" alt="Essential White Tee">
+
+                <span class="tag">NEW</span>
+
+                <button type="button" class="wishlist" aria-label="Add to wishlist">♡</button>
+
+            </div>
+
+            <div class="product-info">
+
+                <p>T-SHIRT</p>
+
+                <h3>Essential White Tee</h3>
+
+                <div class="price">
+                    ₹599
+                </div>
+
+                <div class="buy-actions">
+                    <button class="add-cart" data-name="Essential White Tee" data-price="599">
+                        ADD TO CART
+                    </button>
+                    <button class="buy-now" data-name="Essential White Tee" data-price="599">
+                        BUY NOW
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT 2 -->
+        <div class="product-card" data-category="cargo">
+
+            <div class="product-image">
+
+                <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=900&q=80" alt="Urban Cargo Set">
+
+                <span class="tag">POPULAR</span>
+
+                <button type="button" class="wishlist" aria-label="Add to wishlist">♡</button>
+
+            </div>
+
+            <div class="product-info">
+
+                <p>JEANS & CARGOS</p>
+
+                <h3>Urban Cargo Set</h3>
+
+                <div class="price">
+                    ₹2,999
+                </div>
+
+                <div class="buy-actions">
+                    <button class="add-cart" data-name="Urban Cargo Set" data-price="2999">
+                        ADD TO CART
+                    </button>
+                    <button class="buy-now" data-name="Urban Cargo Set" data-price="2999">
+                        BUY NOW
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT 3 -->
+        <div class="product-card" data-category="cargo">
+
+            <div class="product-image">
+
+                <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=900&q=80" alt="Classic Dark Cargo">
+
+                <button type="button" class="wishlist" aria-label="Add to wishlist">♡</button>
+
+            </div>
+
+            <div class="product-info">
+
+                <p>JEANS & CARGOS</p>
+
+                <h3>Classic Dark Cargo</h3>
+
+                <div class="price">
+                    ₹1,999
+                </div>
+
+                <div class="buy-actions">
+                    <button class="add-cart" data-name="Classic Dark Cargo" data-price="1999">
+                        ADD TO CART
+                    </button>
+                    <button class="buy-now" data-name="Classic Dark Cargo" data-price="1999">
+                        BUY NOW
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT 4 -->
+        <div class="product-card" data-category="shirt">
+
+            <div class="product-image">
+
+                <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=900&q=80" alt="Classic Formal Shirt">
+
+                <span class="tag">SALE</span>
+
+                <button type="button" class="wishlist" aria-label="Add to wishlist">♡</button>
+
+            </div>
+
+            <div class="product-info">
+
+                <p>SHIRTS</p>
+
+                <h3>Classic Formal Shirt</h3>
+
+                <div class="price">
+                    ₹1,999
+                </div>
+
+                <div class="buy-actions">
+                    <button class="add-cart" data-name="Classic Formal Shirt" data-price="1999">
+                        ADD TO CART
+                    </button>
+                    <button class="buy-now" data-name="Classic Formal Shirt" data-price="1999">
+                        BUY NOW
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- PRODUCT 5 -->
+        <div class="product-card" data-category="underwear">
+
+            <div class="product-image">
+
+                <img src="https://images.unsplash.com/photo-1604176354204-9268737828e4?auto=format&fit=crop&w=900&q=80" alt="Comfort Cotton Pack">
+
+                <button type="button" class="wishlist" aria-label="Add to wishlist">♡</button>
+
+            </div>
+
+            <div class="product-info">
+
+                <p>UNDERWEAR</p>
+
+                <h3>Comfort Cotton Pack</h3>
+
+                <div class="price">
+                    ₹899
+                </div>
+
+                <div class="buy-actions">
+                    <button class="add-cart" data-name="Comfort Cotton Pack" data-price="899">
+                        ADD TO CART
+                    </button>
+                    <button class="buy-now" data-name="Comfort Cotton Pack" data-price="899">
+                        BUY NOW
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PROMO -->
+<section class="promo">
+
+    <div>
+
+        <p>LIMITED TIME</p>
+
+        <h2>UP TO 40% OFF</h2>
+
+        <p>
+            Upgrade your wardrobe with our latest collection.
+        </p>
+
+        <p class="offer-note">
+            First order: delivery charge, platform fee, and other taxes are waived.
+        </p>
+
+        <a href="#shop" class="btn light">
+            SHOP SALE
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT -->
+<section class="about" id="about">
+
+    <div class="about-image">
+
+        <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1000&q=80" alt="Fashion store lifestyle image">
+
+    </div>
+
+    <div class="about-content">
+
+        <p>OUR STORY</p>
+
+        <h2>BUILT FOR THE
+            <span>EVERYDAY.</span>
+        </h2>
+
+        <p>
+            NOREV was created with one simple idea:
+            clothing should feel as good as it looks.
+            We create timeless pieces with modern
+            silhouettes and everyday comfort.
+        </p>
+
+        <a href="#" class="text-link">
+            LEARN MORE →
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- NEWSLETTER -->
+<section class="newsletter">
+
+    <p>STAY IN THE LOOP</p>
+
+    <h2>SUBSCRIBE FOR UPDATES</h2>
+
+    <p>
+        Get first access to new drops, exclusive offers
+        and style inspiration.
+    </p>
+
+    <form id="newsletterForm">
+
+        <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            required
+        >
+
+        <input
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+        >
+
+        <button type="submit">
+            JOIN THE LIST
+        </button>
+
+    </form>
+
+</section>
+
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+
+    <div class="section-heading">
+
+        <p>GET IN TOUCH</p>
+
+        <h2>CONTACT US</h2>
+
+    </div>
+
+
+    <form class="contact-form" id="contactForm" action="mailto:enquiry@norev.in" method="post" enctype="text/plain">
+
+        <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            required
+        >
+
+        <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            required
+        >
+
+        <input
+            type="text"
+            name="subject"
+            placeholder="Subject"
+            required
+        >
+
+        <textarea
+            name="message"
+            placeholder="Your Message"
+            rows="6"
+            required
+        ></textarea>
+
+        <button type="submit" class="btn">
+            SEND MESSAGE
+        </button>
+
+    </form>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+    <div class="footer-container">
+
+        <div>
+
+            <div class="logo">
+                NOREV<span>.</span>
+            </div>
+
+            <p>
+                Modern clothing for modern lives.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h4>SHOP</h4>
+
+            <a href="#shop">Men</a>
+            <a href="#shop">Women</a>
+            <a href="#shop">Streetwear</a>
+            <a href="#shop">New Arrivals</a>
+
+        </div>
+
+
+        <div>
+
+            <h4>HELP</h4>
+
+            <a href="#">Shipping</a>
+            <a href="#">Returns</a>
+            <a href="#">Size Guide</a>
+            <a href="#">FAQ</a>
+
+        </div>
+
+
+        <div>
+
+            <h4>FOLLOW</h4>
+
+            <a href="https://instagram.com/norevv.co.in" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://facebook.com/Norevv" target="_blank" rel="noopener noreferrer">Facebook</a>
+            <a href="mailto:contact@norev.in">contact@norev.in</a>
+            <a href="mailto:support@norev.in">support@norev.in</a>
+            <a href="mailto:orders@norev.in">orders@norev.in</a>
+
+        </div>
+
+    </div>
+
+
+    <div class="copyright">
+
+        © 2026 NOREV. All Rights Reserved.
+
+    </div>
+
+</footer>
+
+
+<!-- CART SIDEBAR -->
+<div class="cart-overlay" id="cartOverlay"></div>
+
+<div class="cart" id="cart">
+
+    <div class="cart-header">
+
+        <h2>Your Cart</h2>
+
+        <button id="closeCart">
+            ×
+        </button>
+
+    </div>
+
+    <div id="cartItems">
+
+        <p class="empty">
+            Your cart is empty.
+        </p>
+
+    </div>
+
+    <div class="cart-bottom">
+
+        <div class="total">
+
+            <span>Total</span>
+
+            <strong>
+                ₹<span id="cartTotal">0</span>
+            </strong>
+
+        </div>
+
+        <button id="checkoutBtn">
+            CHECKOUT
+        </button>
+
+        <button id="buyNowBtn" class="buy-now-cart">
+            BUY NOW
+        </button>
+
+    </div>
+
+</div>
+
+
+<div class="modal-overlay" id="checkoutOverlay"></div>
+
+<div class="checkout-modal" id="checkoutModal" aria-modal="true" role="dialog" aria-labelledby="checkoutTitle">
+    <div class="checkout-header">
+        <div>
+            <p class="checkout-tag">Complete purchase</p>
+            <h2 id="checkoutTitle">Order details</h2>
+        </div>
+        <button type="button" id="closeCheckout" aria-label="Close checkout">×</button>
+    </div>
+
+    <div class="checkout-summary" id="checkoutSummary">
+        Product: Selected item
+    </div>
+
+    <form id="checkoutForm" class="checkout-form">
+        <div class="field-row">
+            <label>
+                <span>Full name</span>
+                <input type="text" name="fullName" placeholder="Your full name" required>
+            </label>
+        </div>
+
+        <div class="field-row two-col">
+            <label>
+                <span>Date of birth</span>
+                <input type="date" name="dob" required>
+            </label>
+
+            <label>
+                <span>Contact no</span>
+                <input type="tel" name="phone" placeholder="+91 98765 43210" required>
+            </label>
+        </div>
+
+        <div class="field-row">
+            <label>
+                <span>Email ID</span>
+                <input type="email" name="email" placeholder="you@example.com" required>
+            </label>
+        </div>
+
+        <div class="field-row">
+            <label>
+                <span>Full address</span>
+                <textarea name="address" rows="4" placeholder="House no, street, city, state, pincode" required></textarea>
+            </label>
+        </div>
+
+        <button type="submit" class="checkout-submit">Place order</button>
+    </form>
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
